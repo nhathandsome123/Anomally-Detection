@@ -18,7 +18,7 @@ def cleandata(df):
     columns_to_delete = [
         '_start', '_stop', '_time', '_measurement',
         'src_ip', 'dest_ip', 'src_port', 'dest_port',
-        'client_id', 'client_identifier',
+        'client_id', 'client_identifier', 'payload_len', 'message_id'
         'username', 'password', 'topic', 'payload_raw' 
         # ... Add all other columns from your original script ...
     ]
@@ -93,5 +93,6 @@ train, test = train_test_split(df_final, test_size=0.3, random_state=SEED)
 print("Saving to CSV...")
 train.to_csv('train70_auto.csv', index=False)
 test.to_csv('test30_auto.csv', index=False)
+
 
 print("Done! Process Complete.")
