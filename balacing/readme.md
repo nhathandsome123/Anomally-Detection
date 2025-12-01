@@ -63,4 +63,4 @@ Output Balance:
 The final dataset will contain roughly 50% Normal Traffic and 50% Attack Traffic (divided equally among all attack types).
 
 
-(note: ta có bỏ đi trường payload_len và message_id, đoạn nớ ta làm thủ công, chưa có trong script balancer)
+
