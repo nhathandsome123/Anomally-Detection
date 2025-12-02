@@ -13,7 +13,7 @@ ENCODER_FILE = "label_encoder_dict.pkl"
 DROP_COLUMNS = [
     'frame.time_epoch', 'frame.time_relative', 'frame.time_delta',
     'ip.src', 'ip.dst', 'eth.src', 'eth.dst', 'tcp.srcport', 'tcp.dstport',
-    'mqtt.topic', 'mqtt.clientid', 'payload_raw', 'payload_len', 'message_id',
+    'mqtt.topic', 'mqtt.clientid', 'payload_raw', 'payload_len', 'message_id', 'Label',
     '_start', '_stop', '_time', '_measurement', 'client_identifier', 'username', 'password' 
 ]
 
@@ -131,4 +131,5 @@ if ground_truth is not None:
 
 # Save detailed log
 results.to_csv("ids_scan_slowite.csv", index=False)
+
 print("\nDetailed report saved to 'ids_scan_slowite.csv'")
